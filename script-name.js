@@ -10,3 +10,18 @@ details.forEach(details => {
     }
 });
 
+
+function sumUp(n){
+    let rresult = 0;
+    for (let i = 1; i<=n; i++) {
+        result = result + i;
+    }
+}
+
+
+
+
+
+
+
+
