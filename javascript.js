@@ -50,4 +50,8 @@ A repeated declaration of the same variable is an error;
 
      let myPlanet = 'Venus';
      let userName = '';
+
+We generally use uppercase for constants thar are "hard-coded or, in other words, when the value is known prior to execute and directly written into the code
+  const BIRTHDAY = '18.04.1982';
+  
  */
