@@ -233,6 +233,175 @@ THE OLD VAR
 
      sayHi();
 
+     let x = 10;
+     let y = 13;
+
+     let z = 23;
+     if you add two strings the results would be string concatenation.
+     The javascript interpreter works from left to right.
+     first 10 + 20 is added cos x and y are numbers then 30 + "30" is concatenated cos z is a string
+     Javascript will convert strings to numbers when substracting or dividing .Remember javascript will not convert strings to numbers when adding.
+
+     NAN(NOT A NUMBER)
+      NAN is sa javascript reserved word indicating that a number is not a legal number.
+      Example
+      let x = 100 / "Apple"; will result into a nan
+
+      A number divided by a numeric string will result into a number:
+      let x = 100 / "10"
+
+      You can use the global Javascript function isNAN() to find out if a value is not a number
+      
+      let x = 100 / 'apple';//Results into true
+
+
+     Explain the difference between == and ===
+ == means equal
+  let x  
+
+If the operand is not a number, The unary plus converts it into a number.
+
+ 
+         DATA TYPES
+         A.NUMBER
+         1.Number represents both integer and floating point numbers.
+         Infinity is a special value thats greater than any number
+         example alert( 1 / 0); //infinity
+         NaN represents a computational error.its a result of an incorrect or an undefined mathematical operation for instance,
+         alert( 'not a number' / 2);
+
+         B.STRING
+         Must be surrounded by quotes.
+         let str = "Hello";
+
+         iN JAVASCRIPT there are 3 types of quotes.
+         a.double quotes: ""
+         b.single quotes: ''
+         c.Backticks: `Hello` //backticks are extended  functionality quotes ,they allow us to embed variables and expressions into a string by wrapping them in ${name};for example
+
+         let name = "John";
+         embed a variable
+         alert( `Hello, ${John}` ); // Hello, John!
+
+         //embed an expression
+         alert(`the result is ${1 + 2}`); //the result is 3
+         The expression inside ${...} is evaluated and the result becomes a part of the string.Note this can only be done in backticks.
+
+         C.BOOLEAN(logical type)
+
+         It has two values true and false.Commonly used to store yes/no values.
+         
+         Example
+         let nameFieldChecked = true; //yes,name field is checked
+         let ageFieldChecked = false; //no, age field is not checked
+
+         Booleans values also come as a result of comparisons:
+let isGreater = 4 > 1;
+alert(isGreater); // true (comparison results is yes).
+
+  D.THE "NULL" vALue
+  contains only the null value:
+  let age = null; //states that age is unknown.
+  in javascript null represents 'nothing 'empty' or 'value unknown'
+
+  E.THE "UNDEFINED" VALUE
+  The meaning of undefined is "value is not assigned"
+   let age;
+   alert(age); //shows "undefined"
+
+   Its possible to explicitly assign undefined to a variable;
+
+   let age = 100;
+
+   //change the value to undefined
+
+   age = undefined;
+   alert(age); // "undefined"
+
+   F.OBJECTS AND SYMBOLS
+   The object type is special.objects are used to store collections of data and more complex entities.
+
+
+   G.THE TYPEOF operator
+   returns the type of the operand
+   typeof undefined //undefined
+   typeof 0 // number
+   typeof 10n // bigint
+   typeof true // 'boolean'
+   TYPEOF FOO // "STRING"
+   typeof symbol('id') // "symbol"
+    typeof Math // "object" (1) // MATH IS A BUILT IN OBJECT THAT PROVIDES MATHEMATICAL OPERATIONS
+    typeof null // 'object' (2)
+    typeof alert // "function"
+
+    TASKS
+    What is the output of the script?
+    let name = "Ilya";
+
+     alert(`hello ${1}`); \\ hello 1. the expression is a number.
+     alert(`hello ${ "name" }`); \\ hello name, the expression is a string name.
+      alert(`hello ${ name }`); \\ hello Ilya, the expression is a variable , embed it.
+
+      LOGICAL OPERATORS
+       There are four logical operators in javascript:
+       
+       ||(OR) - IS MEANT TO MANIPULATE BOOLEAN VALUES ONLY.If any of its arguments are true it returns true, otherwise it returns false.
+       alert( true || true ); //true
+       alert( false || true ); //true
+       alert( true || false ); //true
+       alert( false || false ); //false
+
+       if ( 1 || 0 ) // works like true || false
+    most times , OR is used in an if statement to test if any of the given conditions is true
+ Example;
+ let hour = 9;
+ if (hour > 10 || hour> 18) {
+  alert("The office is closed.");
+  
+  OR finds the first truthy value.
+ }
+
+ Given multiple OR'ed values:
+ result = value1 || value2 || value3;
+ A chain of OR || RETURNS THE FIRST TRUTHY VALUE OR THE LAST ONE IF NO TRUTHY VALUE IS FOUND.
+
+
+       && (AND)
+       RESULT a && b;
+AND returns true if both operands are truthy and false otherwise.
+
+alert( true && true ); //true
+alert( true && false ); //false
+alert( false && true ); //false
+alert( false && false ); //false
+
+EXAMPLE with if:
+let hour = 12;
+let minute = 30;
+
+if (hour == 12 && minute == 30) {
+  alert('The time is 12:30');
+}
+
+THE AND && Operator does the following
+ Evaluates operands from left to right.converts it to a boolean,if the results is false,stops and returns the original value of that operand.
+
+       !(NOT)
+    is represented with an exclamation sign!
+
+    results = !value;
+    converts the operand to boolean type: true/false
+    Returns the inverse value.
+alert( !true ); // false
+alert ( !0 ); //true
+
+The precedence of NOT ! IS THE HIGHEST of all logical operators, so it always execute first, before && or ||.
+
+if (age < 14 || age > 90) {
+  alert(age);
+}
+
+if(!(age >= 14 && age <= 90))
 
 
 
