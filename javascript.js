@@ -189,6 +189,51 @@ For example
 
      alert(a); //7 the result of 3 + 4
 
+     typeof 62 // returns number
+     typeof 'Hello World'; // returns string
+
+     typeof true; //returns 'boolean'
+     typeof null; //returns object
+
+     HERE IS A code that asks the user for two numbers and shows their sum.
+it works incorrectly.The output in the example below is 12.Fix ot the result should be 3.
+
+
+let a  = prompt('first number', 1);
+let b = prompt('Second number, 2');
+
+alert(a + b); 12
+so what we should do here is convert strings to numbers before + operator
+alert( +a + +b ); //3, using both unary and binary + 
+
+THE OLD VAR
+ 3 WAYS OF VARIABLE DECLARATION
+ 1.let
+ 2.const
+ 3.var
+  
+    1.VAR
+      var message = 'Hi';
+      alert(message); //Hi
+
+      if(true) {
+        let test = true; //use 'let'
+      }
+
+      for(var i = 0; i < 10; i++) {
+              }
+
+     function sayHi()  {
+      if (true) {
+        var phrase = 'Hello';
+      }
+
+      alert(phrase); //works
+     }         
+
+     sayHi();
+
+
 
 
    */
