@@ -403,6 +403,62 @@ if (age < 14 || age > 90) {
 
 if(!(age >= 14 && age <= 90))
 
+CREATING A STRING
+ const string = "The revolution will not be televised,";
+ console.log(string);
 
 
+ ESCAPING CHARACTERS IN A STRING
+ We do it by putting a backslash just before the character
+ 
+ const bigmouth = 'I\'ve got no right to take my place..'
+ 
+ console.log(bigmouth);
+
+ CONCATENATING STRINGS
+ Means "join together"
+ use backtick characters to join together
+ const name = "Chris";
+ const greeting = `Hello, ${name}`;
+ console.log(greeting); // "Hello, Chris"
+
+ you can use same techniques to join together  two variables:
+
+ const one = "Hello, ";
+ const two = "how are you?";
+ const joined = `${one}${two}`;
+ console.log(joined); // 'Hello, how are you?'
+
+
+ <button>Press me</button>
+
+ const button = document.querySelector("button");
+
+ function greet() {
+  const name = prompt("What is your name?");
+  alert(`Hello ${name}, nice to see you!`);
+ }
+
+ button.addEventListener('click',greet);
+ \\Here we are using a window.prompt(.) function,which asks the user to answer a question via a popup dialog box 
+ then stores the text they enter inside a given variable - in this case a name.
+ we then use the window.alert() function to display another popup containing a string which inserts the name into generic greeting message.
+
+   CONCATENATION USING +
+ const greeting = "Hello";
+ const name = "Chris";
+ console.log(greeting + ", " + name) // "Hello, Chris"
+
+ The Number() function converts anything passed to it into a number
+ const myString = "123";
+ const myNum = Number(myString);
+ console.log(typeof myNum);
+
+ line break character(\n)
+ const output = "I like the song.\nI gave it a score of 90%.";
+/*
+I like the song.
+I gave it a score of 90%.
+
+*/
    */
