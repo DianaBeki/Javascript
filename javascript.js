@@ -567,5 +567,27 @@ THE TRIM()
   text.split(" ")  //split on spaces
   text.split(" || ") //split on pipe
 
+
+  Alert the number of items in an array,using correct array property.
+
+  const cars = ["Volvo", "Jeep", "Mercedes"];
+  alert(cars.length);
+
+  Use the correct Array to remove the last item of the fruits array.
+  const fruits = "apple", "mango", "banana";
+
+  fruits.pop()
+
+add "kiwi" to the fruits array.
+  const fruits = "apple", "mango", "banana";
+  fruits.push("Kiwi");
+
+  Splice() method is used to remove items using their index order.
+  const fruits = ["Banana", "orange", "apple", "Kiwi"]; //fruits.splice(1, 2);
+
+  sort fruits array alphabetically
+  const fruits = ["banana", "orange"]; 
+  fruits.sort();
+  
 */
   
