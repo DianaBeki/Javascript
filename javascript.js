@@ -588,6 +588,95 @@ add "kiwi" to the fruits array.
   sort fruits array alphabetically
   const fruits = ["banana", "orange"]; 
   fruits.sort();
+
+  == means equality test, while single one means = an assignment.
+
+  JAVASCRIPT if, else, and else if.
+  use if,if a specified condition is true
+  use else if the same condition is false.
+  use else if ,to specify a new condition to test, if the first condition is false.
+  use switch to specify many alternative blocks of code to be executed.
+
+  THE IF STATEMENT
+  If(condition) {
+    //code block
+  }
+
+  Example make a good day greeting if the hour is less than 18.00
+
+  let hour = 9.00
+  if (hour < 18) {
+  greeting = "Good day"; //Good day
+  }
+
+
+  THE ELSE STATEMENT
+  code to be executed if the condition is false
+  if (){
+
+  }
+  else{  }
+  EXAMPLE
+  if(hour < 18) {
+    greeting = "Good day";
+  }
+  else {greeting = "Good evening";}
+
+  THE ELSE IF STATEMENT
+  SPECIFIES A NEW CONDITION IF THE FIRST CONDITION IS FALSE.
   
+  if (condition1) {
+    //if condition is true
+  }
+  else if (condition2) {
+    //executed if condition1 is false and condition2 is true.
+  }
+
+  else {
+    executed if condition1 and condition2 is false.
+  }
+
+  EXAMPLE
+  if time is less than 10.00,create a "Good morning" greeting, if not ,but time is less than 20.00,create a "Good day" greeting, otherwise a "Good evening":
+  if(time < 10) {
+    greeting = "Good morning";
+  }
+  else if (time < 20){
+    greeting = "Good day";
+  }
+  else {
+    greeting = "Good evening";
+  }
+
+Create a switch statement that will  alert "Hello" if fruits is banana and welcome if fruits is apple.
+
+switch (fruits) {
+  case "Banana":
+    alert("Hello")
+    break;
+  case "Apple":
+    alert("welcome")
+    break;
+  default:
+  alert("Neither");
+}
+
+let i;
+for (i = 0; i < 10; i++) {
+  console.log(i);
+}
+  let i 
+while (i < 10) {
+  console.log(i)
+  i
+}
+
+create a loop that runs as long as i is less than 10, but increase i with 2 each time
+let = 0;
+while(i < 10) {
+  console.log(i);
+  i = i + 2;
+}
+
 */
   
