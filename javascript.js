@@ -460,5 +460,112 @@ CREATING A STRING
 I like the song.
 I gave it a score of 90%.
 
+
+JAVASCRIPT  STRING LENGTH
+- The length property returns the length of a string.
+EXAMPLE
+let text = "ABCDEFGHIJKLMNOPQRSTVUWXYZ";
+
+let length = text.len; //The length of the string is 26.
+
+
+    EXTRACTING STRINGS APART.
+ 
+A.SLICE(start, end); // slice(), extracts a part of a string and returns the extracted part in a new string
+let text = "apple, banana, Kiwi";
+let part = text.slice(7, 13); // Banana.
+
+If you omit the second parameter, the method will slice out the rest of the string:
+extract a part of a string from position 7:
+ banana, kiwi
+
+ IF A PARAMETER IS NEGATIVE, THE POSITION IS COUNTED FROM THE END OF THE STRING.
+ LET TEXT = "APPLE, BANANA, KIWI";
+ LET PART = TEXT.SLICE(-12); //Counting from the end, banana and kiwi
+
+NOTE JAVASCRIPT COUNTS POSITION FROM ZERO //First position is zero and second position is 1.
+
+This example slices out a portion of a string from position (-12, -6);
+let text = "apple, banana, kiwi"; // banana
+
+
+B.SUBSTRING(start, end)
+ Start and end values less than 0 are treated as 0.
+
+ let str = "Apple, banana, kiwi";
+ let part = str.substring(7, 13); //returns banana
+
+
+ C.Substr(start, length)
+ Similar to slice().
+  The difference is that the second parameter specifies the length of the extracted part
+
+  Example
+  let str = "Apple, Banana, Kiwi";
+  let part = str.substr(7, 6);
+  if you omit the second parameter, substr() will slice out the rest of the string.
+
+  let str = "apple, banana, kiwi";
+  let part = str.substr(7) // returns banana and kiwi.
+  let part = str.substr(-4) // kiwi
+
+
+  REPLACING STRINGS CONTENT
+  The replace() method replaces a specified value with another value in a string:
+  
+  let text = "Please visit Microsoft!";
+
+  let newText = text.replace("Microsoft", "W3Schools");
+  by default, the replace() method replaces only the first match:
+  Returns a new string.
+  To replace all matches , use a regular expression with a /g
+  let newText = text.replace(/Microsoft/g, "W3Schools");
+  
+  ReplaceAll() - allows you to specify a regular expression instead of a string to be replaced.
+
+  
+  CONVERTING TO UPPER AND LOWER CASE.
+  A string is converted to upper case with toUpperCae():
+  A string is converted to lower case with toLowerCase():
+
+let text1 = 'Hello World!';
+
+let text2 = text1.toUpperCase(); // HELLO WORLD
+
+JAVASCRIPT STRING CONCAT()
+Concat() joins two or more strings.
+ 
+EXAMPLE
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat( " ", text2);
+Strings cant be changed only replaced.
+
+THE TRIM()
+ Removes whitespace from both sides of a string.
+ let text1 = "     Hello World!        "; //length 22
+ let text2 = text1.trim();      //length 12
+
+ The trimStart() //removes whitespace only from the start of a string.
+ TrimEnd(); //removes whitespace from the end of a string
+
+ padStart()method pads a string with another string.
+ let text = "5";
+ let padded = text.padStart(4, "x") //xxx5
+ To pad a number convert the number to a string first.
+
+ STRING charAt()
+  returns the character at a specified index(position) in a string:
+  let text = "HELLO WORLD";
+  let char = text.charAt(0);  //H
+
+  CONVERTING A STRING INTO ARRAY
+  We use split() method:to convert string to array.
+
+  Example
+  text.split(" ,") //split on commas
+  text.split(" ")  //split on spaces
+  text.split(" || ") //split on pipe
+
 */
-   */
+  
