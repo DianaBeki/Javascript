@@ -53,7 +53,7 @@ function favoriteAnimal(animal) {
 }
 
 console.log(favoriteAnimal('Goat'))
-*/
+
 
 
 function add7(sum) {
@@ -65,3 +65,25 @@ function add7(sum) {
 
 console.log(sum);
 add7(sum);
+
+
+//write a function called multiply that takes two numbers and returns their product.
+ 
+function MULTIPLY(a, b) {
+   let a = 20;
+   let b = 30;
+  return a * b
+  
+}
+
+ console.log(a * b);
+ multiply(a, b);*/
+
+ function capitalize(string) {
+  return toUpperCase(0)
+ }
+
+
+indxcap = ("grace");
+
+console.log(toUpperCase(0));
