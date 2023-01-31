@@ -77,7 +77,7 @@ function MULTIPLY(a, b) {
 }
 
  console.log(a * b);
- multiply(a, b);*/
+ multiply(a, b);
 
  function capitalize(string) {
   return toUpperCase(0)
@@ -86,4 +86,12 @@ function MULTIPLY(a, b) {
 
 indxcap = ("grace");
 
-console.log(toUpperCase(0));
+console.log(toUpperCase(0));*/
+
+//Should return last letter
+function lastLetter(myWord) {
+let letter = myWord.slice(-1);
+return letter;
+}
+
+console.log(lastLetter(myWord));
