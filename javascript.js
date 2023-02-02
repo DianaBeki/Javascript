@@ -737,24 +737,59 @@ var myList = [["cereal", 3], ["milk", 2], ["bananasa", 3]]
 // var outerWear = "T-shirt";
 
 // function myOutfit() {
+//   var outerWear = "Sweater"
   
+// //   return outerWear;
+// // }
+
+// // console.log(myOutfit())
+
+// //  var myName = "Harriet"; //its actual the global variable since its declared outside the function.
+
+// // function Name() {
+// //   return myName;
+// // }
+
+// // console.log(Name());
+
+// // function minusSeven(num) {
+// //   return num - 7;
+// // }
+
+// // console.log(minusSeven(10));
+
+// // var sum = 0;
+
+// // function addThree() {
+// //   sum = sum + 3;
+
+// //   console.log(sum);
+// // }
+
+// // addThree();
+
+
+// function addFive(num) {
   
-//   return outerWear;
+//   num = num + 5;
+
+//   console.log(num);
 // }
 
-// console.log(myOutfit())
+// addFive(10);
 
-var myName = "Harriet"; //its actual the global variable since its declared outside the function.
+// BOOLEAN VALUES
+//  - tHEY are only two values true and false where true is && and false is or ||
 
-function Name() {
-  return myName;
+
+function testEqual(val) {
+  if(val == 12) {
+    return "Equal";
+  }
+  return "Not equal";
 }
 
-console.log(Name());
-
-
-
-
+console.log(testEqual(10));
 
 
 
