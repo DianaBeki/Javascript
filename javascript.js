@@ -679,12 +679,188 @@ while(i < 10) {
 }
 
 
-class {
-
-  
+class{
 }
 
 
+var myArray = [50, 60, 70];
 
+var myData = myArray[2];
+
+console.log(myData);
+MANIPULATE ARRAY WITH Push()- ADDS aN Array
+
+Pop() - Removes an Array
+
+var ourArray =  [1, 2, 3];
+ 
+var removeFromOurArray = ourArray.pop();
+
+shopping list
+var myList = [["cereal", 3], ["milk", 2], ["bananasa", 3]]
 */
+//Example 
+
+// function ourReusableFunction() {
+//   console.log("Heyya, World");
+
+// }
+
+// ourReusableFunction();
+
+//  function ourFunctionWithArgs(a, b) {
+//   console.log(a - b);
+// }
+
+// ourFunctionWithArgs(10, 5);
+
+// function fun1() {
+
+// }
   
+ 
+// function fun2() {
+
+//   var output = "";
+// if(typeof myGlobal != "undefined") {
+  
+//   output += "myGlobal: " + myGlobal;
+// }
+
+// if(typeof oopsGlobal != "undefined") {
+//   output += "oopsGlobal: " + oopsGlobal;
+// }
+
+// console.log(output);
+// }
+
+// var outerWear = "T-shirt";
+
+// function myOutfit() {
+  
+  
+//   return outerWear;
+// }
+
+// console.log(myOutfit())
+
+var myName = "Harriet"; //its actual the global variable since its declared outside the function.
+
+function Name() {
+  return myName;
+}
+
+console.log(Name());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

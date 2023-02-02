@@ -86,7 +86,7 @@ function MULTIPLY(a, b) {
 
 indxcap = ("grace");
 
-console.log(toUpperCase(0));*/
+console.log(toUpperCase(0));
 
 //Should return last letter
 function lastLetter(myWord) {
@@ -94,4 +94,27 @@ let letter = myWord.slice(-1);
 return letter;
 }
 
-console.log(lastLetter(myWord));
+console.log(lastLetter(myWord));*/
+
+
+let answer = parseInt(prompt("Please enter the number you would like to fizzbuzz up to: "))
+
+for (let i = 1; i<= answer; i++) {
+  if(i % 3 === 0) {
+    console.log("Fizz")
+  }  else {
+    console.log(i);
+  }
+}
+
+let answer = parseInt(prompt("Please enter the number you would like to fizzbuzz up to:"));
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz")
+  } else {
+    console.log(i);
+  }
+}
