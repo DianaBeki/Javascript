@@ -812,28 +812,97 @@ var myList = [["cereal", 3], ["milk", 2], ["bananasa", 3]]
 //   result = "5 or smaller";
 // }
 
-function testElseIf(val) {
-  if (val > 10) {
-    return "Greater than 10";
-  } 
+//  function testElseIf(val) {
+//   if (val > 10) {
+//     return "Greater than 10";
+//   } 
   
-  else if (val < 5) {
-    return "smaller than 5";
-  }
+//   else if (val < 5) {
+//     return "smaller than 5";
+//   }
   
-  else {
-    return "Between 5 and 10";
+//   else {
+//     return "Between 5 and 10";
+//   }
+// }
+
+// testElseIf(7);
+
+
+// function testOr(num) {
+//   if(num <= 20 && num >= 40) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(testOr(15));
+
+//write chained if/else if statements to fullfill the following conditions:
+
+function testIfElseIf(num) {
+  if (num < 5 && num < 10) {
+    return "Tiny and small";
+  }else if(num < 15 && num < 20) {
+    return "medium and large";
+  } else if (num >= 20) {
+    return "Huge";
+  }else {
+    return "Huge number";
   }
 }
 
-testElseIf(7);
+console.log(testIfElseIf(31));
+
+var names = ["hole-in-one", "Eagle", "Birdie", "Par", "Boogie"];
+
+function golfscore(par, strokes) {
+  if(strokes == 1) {
+    return names[0];
+  }else if(strokes <= par - 2) {
+    return names[1];
+  }
+}
+
+console.log(golfscore(3, 2));
 
 
 
+//SWITCH STATEMENTS
+//Write a swtich statement which tests val and sets answer for the following conditions
 
+/*1 - "alpha"
+  2 - "beta"
+  3 - "gamma"
+  4 - "delta"
+*/
+function caseInSwitch(val) {
+  var answer = "";
 
+  switch(val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+    default:
+      answer =  "stuff";
+      break;
 
+  }
 
+  return answer;
+}
+
+console.log(caseInSwitch(1));
 
 
 
