@@ -782,19 +782,51 @@ var myList = [["cereal", 3], ["milk", 2], ["bananasa", 3]]
 //  - tHEY are only two values true and false where true is && and false is or ||
 
 
-function testEqual(val) {
-  if(val == 12) {
-    return "Equal";
+//  function testEqual(val) {
+//   if(val == 12)
+
+//   The &&(AND) operator
+//   if(val <= 40 && val >= 22) {
+//   return yes;
+// }
+
+//   The (OR) || operator
+//  if(val < 10 || val > 20) {
+//   return "Outside";
+//  }else { }
+
+//   if(val != 99) {
+//     return "Equal";
+//   }
+//   return "Not equal";
+// }
+
+// console.log(testEqual(10));
+
+
+// strict inequality operator( === )
+
+// if (val > 5) {
+//   result = "Bigger than 5";
+// } else {
+//   result = "5 or smaller";
+// }
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } 
+  
+  else if (val < 5) {
+    return "smaller than 5";
   }
-  return "Not equal";
+  
+  else {
+    return "Between 5 and 10";
+  }
 }
 
-console.log(testEqual(10));
-
-
-
-
-
+testElseIf(7);
 
 
 
