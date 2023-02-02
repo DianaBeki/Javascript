@@ -897,7 +897,68 @@ function caseInSwitch(val) {
       answer =  "stuff";
       break;
 
+
+
+//Returning boolean values from a function
+function isLess(a, b) {
+  if(a < b) {
+    return true;
+  }else {
+    return false;
   }
+}
+
+console.log(isLess(10, 15));
+
+
+if (a < 0 || b < 0) {
+  return undefined;
+}
+
+//count with switch statement
+var count = 0;
+
+function cc(card) {
+
+  switch(card) {
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+  case 6:
+     count++;
+     break;
+  case 10:
+  case "J":
+  case "Q":
+  case "K":
+  case "a":
+    count--;
+    break;
+
+  }
+  return count "";
+}
+
+
+//JAVASRIPT Object
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Everything!"]
+};
+
+var myDog {
+ "name": "Quincy",
+ "legs": 3,
+ "tails": 2,
+ "friends": []
+};
+
+myDog.name = "Happy coder"
+
+}
 
   return answer;
 }
@@ -905,10 +966,64 @@ function caseInSwitch(val) {
 console.log(caseInSwitch(1));
 
 
+//LOOPS
+
+var myArray = [];
+
+var i = 0;
+while(i = 0; i < 5; i++) {
+  ourArray.push();
+
+}
+
+var myArray = [];
+
+for (var i = 9; i > 0; i-= 2 ) {
+
+  myArray.push(i);
+}
+console.log(myArray);
 
 
 
+var ourArr = [2, 3, 4, 5, 6];
 
+for(var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+
+console.log(product);
+
+
+function multiplyAll(arr) {
+  
+  var product = i;
+
+  for(var i = 0; i < arr.length; i++){
+
+  }
+
+  return product;
+
+}
+
+console.log(product);
+
+var product = multiplyAll[[1,2], [3,4], [5,6,7]];
+
+console.log(product);
+  
+var product = multiplyAll([[1,2], [3,4],[5,6,7]]);
+
+console.log(product);
+
+PARSEINT 
+function convertToInteger (str){
+       
+}
+
+
+convertToInteger("10011");
 
 
 
