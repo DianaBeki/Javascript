@@ -1089,39 +1089,43 @@ function printManyTimes(str) {
 printManyTimes("freeCodeCamp");
 
 //Use of arrow Functions
-var myConcat = (arr1, arr2) =>arr1.concat(arr2);
+const myConcat = (arr1, arr2) =>arr1.concat(arr2);
 
 console.log(myConcat([1, 2] [3, 4, 5]));
 
+//Rest operator is represented with three dots.
+const sum = (function() {
+  return function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  };
 
+})();
+console.log(sum(1, 2, 3));
 
+var voxel = {x: 3.6, y: 7.4, z: 6.54 };
 
+var x = voxel.x; //x = 3.6
 
+const AVG_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+};
 
+function getTempOfTmrw(avgTemperatures) {
+  "use strict"
+}
+  
 
+const person = {
+  name: "Zodiac Hasbro",
+  age: 56
+};
 
+//
+const greeting = `Hello, my name ${person.name}!
+I am  ${person.age} years old.`;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(greeting);
 
 
 
