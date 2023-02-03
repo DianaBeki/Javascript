@@ -1025,7 +1025,73 @@ function convertToInteger (str){
 
 convertToInteger("10011");
 
+Math.floor()//Deals with whole number
+Math.random() //Deals with random numbers.
 
+
+function ourRandomRange(myMin, myMax) {
+
+  return 0;
+
+}
+
+var myRandom = randomRange(5, 15);
+
+console.log(myRandom);
+
+//ParseInt - converts string to integer.
+function convertToInteger(str) {
+return parseInt(str);
+}
+console.log(convertToInteger("56"));
+
+function checkEqual(a, b) {
+  if(a === b) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+checkEqual(1, 2);
+
+//let wont allow you to create variable twice.
+let catName = "Quincy";
+let quote;
+
+catName = "Beau";
+
+function catTalk() {
+  "use strict";
+
+  catName = "Oliver";
+  quote = catName + "  says Meow! ";
+
+}
+
+catTalk();
+
+
+function printManyTimes(str) {
+  "use strict";
+
+  var sentence = str + " is cool! ";
+
+  sentence = str + " is amazing! "
+
+  for(var i = 0; i < str.length; i+=2) {
+    console.log(sentence);
+  }
+
+}
+
+printManyTimes("freeCodeCamp");
+
+//Use of arrow Functions
+var myConcat = (arr1, arr2) =>arr1.concat(arr2);
+
+console.log(myConcat([1, 2] [3, 4, 5]));
 
 
 
