@@ -1128,6 +1128,14 @@ I am  ${person.age} years old.`;
 console.log(greeting);
 
 
+//const createPerson = `Hello my name is ${person.name} and i am ${person.age}`;
+
+use * to import everything from a File
+
+import * as capitalizeStrings from "capitalize_strings";
+
+function substract(x, y) {return x - y;}
+
 
 
 
