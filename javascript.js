@@ -27,6 +27,7 @@ A repeated declaration of the same variable is an error;
    - The first character must not be a digit.
    - The name  must contain only letters, digits, or the symbols $ and _.
 
+   Node.js is a javascript environment that allows you to run javascript outside your web browser.
    CONSTANTS
      Its an unchanging variable,  we use const to declare it.
      
@@ -82,6 +83,63 @@ Note that if any other operands is a string , then the other one is converted to
 For example 
  alert('1' + 2); // '12'
  alert(2 + '1'); // '21'
+
+ JAVASCRIPT ARRAYS
+  An array is a special variable,that can hold more than one value:
+  WHY USE ARRAYS = IF you have lists of items,An array holds many single values under a single name, and you can access the values by referring to an index number.
+  const cars = ["Saab", "Volvo", "BMW"];
+
+  CREATING AN ARRAY
+    const arr_name = [item1, item2, ....]; //its common practice to declare arrays with const keyword.
+    You access an array element by referring to the index number.
+    const cars = ["Saab","Volvo", "BMW"];
+    let car = cars[0];
+
+    CHANGING AN ARRAY ELEMENT
+    const cars = ["Saab", "Volvo", "BMW"];
+    Cars[0] = "Opel";
+
+    ARRAYS ARE OBJECTS
+    aRRAYS USE NUMBERS TO ACCESS ITS "ELEments" while Objects use names to access its "members"
+
+    OBJECT
+    const person = {
+      firstName: "John",
+      lastName: "Dee",
+      age: 46
+    }
+
+    person = person.firstName;
+
+    ARRAYS PROPERTIES AND METHODS
+    cars.length //Returns the number of elements
+    cars.sort //sorts the array
+
+    THE LENGTH PROPERTY
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let length = fruits.length; // 4 - returns the length of an array.
+
+    Accessing the first array
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let fruit = fruits[0];
+
+    ADDING ARRAY ELEMENTS
+     USE push() method:
+ const fruits = ["Banana", "Orange"," Apple"];
+ fruits.push("Lemon"); //Adds a new element (Lemon) to fruits
+
+ THESE TWO DIFFERENT STATEMENTS BOTH CREATE NEW ARRAY
+ const points = new Array(40, 100, 1, 5, 25, 10);
+ const points = [40, 100, 1, 5, 25, 10];
+
+ The typeof operator; when used on an array, returns object:
+ const fruits = ["Banana", "Orange"," Apple"];
+ 
+ let type = typeof fruits;
+
+
+
+
 
  Here is more complex example 
   alert(2 + 2 + '1'); //41 and not 221
