@@ -1,4 +1,5 @@
- function troubleshooting () {
+//unary operator.
+function troubleshooting () {
   
   const a = "1";
   const b = "1";
@@ -49,6 +50,7 @@ const lastName = "Beki";
 const greeting = "Hello! My name is " + firstName" + " " + lastName + " and I am " + (thisYear - birthYear) + " years onload.";
 
 console.log(greeting);
+function number
 
 function greet (name = Diana) {
 
@@ -103,7 +105,6 @@ function MULTIPLY(a, b) {
    let a = 20;
    let b = 30;
   return a * b
-  
 }
 
  console.log(a * b);
@@ -112,7 +113,6 @@ function MULTIPLY(a, b) {
  function capitalize(string) {
   return toUpperCase(0)
  }
-
 
 indxcap = ("grace");
 
@@ -147,4 +147,16 @@ for (let i = 1; i <= answer; i++) {
   } else {
     console.log(i);
   }
+}
+
+
+let answer = parseInt(prompt("Please enter the number you would love to FizBuzzz up to:"))
+
+for(let i = 1; i <= answer; i++)
+if(i % 3 === 0) {
+  console.log("Fizz");
+}else if (i % 5 === 0) {
+  console.log("Buzzz");
+}else {
+  console.log(i);
 }
