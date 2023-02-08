@@ -160,3 +160,61 @@ if(i % 3 === 0) {
 }else {
   console.log(i);
 }
+
+//const body = document.body
+//body.append("Hello World", "Bye")
+// You can only append one thing at a time when using appendChild unlike when you are using append only.
+//How to create element
+//const div = document.createElement('div')
+//how to add text in our div element, we can also use textContent.
+//div.innerHTML  = "<strong>Hello World</strong>"
+//const strong = document.createElement('strong')
+//strong.innerText = 'Hello World 2'
+//div.append(strong) 
+//body.append(div)
+//const header = document.querySelector('header')
+//console.log(header.textContent)
+//h2.remove(h2)
+//main.append(h2)
+//div.removeChild(h2)
+
+//const div = setAttribute('class', picture)
+//removeAttribute('title')
+//const body = document.body
+//const body =  document.body("div")
+
+//word = "Hello World"
+
+//greeting = word.substring(0, 5);
+//greeting = word.length
+//console.log(greeting);
+
+//you can access characters in a string with 'charAt'
+//let word = "World";
+//charOne = word.charAt(4);
+//console.log(charOne);
+//var person = {fname:"Harry", lname:"potter", age:"22"};
+
+
+//  grade = B;
+// switch(grade) {
+//  case 'A':
+//   console.log("Great job");
+//   break;
+// case 'B':
+//   console.log("Ok job");
+//   break;
+// case 'C':
+//   console.log("You can do better");
+//   break;
+//   default:
+//     console.log("Oy vey");
+//     break 
+// // }
+
+//  function myFunction(thing) {
+//   return thing.toUpperCase();
+// }
+
+
+// console.log(myFunction("foo"));
