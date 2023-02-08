@@ -218,3 +218,49 @@ if(i % 3 === 0) {
 
 
 // console.log(myFunction("foo"));
+
+//Math works with the number type.it does not work with BigInt.-Math is a built-in object
+// Math.floor() - returns the largest integer less than or equal to x.
+// Math.round() - returns the value of the number x rounded to the nearest integer.
+// Math.sqrt() - returns the positive square root of x.
+
+//RETURNING A RANDOM INTEGER BETWEEN TWO BOUNDS
+//cAN USE Math.Random() and Math.floor().
+ 
+  //  function random(min, max) {
+  //   const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  //   return num;
+  //  }
+
+  //  random(1, 10);
+
+  //  Special number values
+  //   = NaN(Not a Number) and Infinity
+  //   A. NaN
+  //   if you want to check whether a value is NaN, YOU have to use the global function isNaN():
+  //    isNaN(NaN); // => true
+  //    isNaN(123); // => false
+
+  //   B.Infinity
+  //   is an error value .Anumber cant be represented cos its magnitude is too largee.
+  //   Math.pow(2, 1024); // infinity
+  //   The global function isFinite() allows you to check whether a value is an actual number(neither infinite nor NaN)
+  //   isFinite(80085); //TRUE
+  //   isFinite(Infinity); //false
+  //   isFinite(NaN); // false
+
+  //   Comparison 
+  //   Numbers are considered equal if they have same value.
+  //   undefined turns to NaN
+  //   null turns into 0.
+  //   true turns into 1; false turns into 0.
+
+  //   const d = new Date("November 17, 1998 03:24:00);
+  //   console.log(Number(d));
+
+  //   Equality comparisons and sameness.
+  //   === strict equality(triple equals);
+  //   ==loose equality(double equals);
+
+
+
