@@ -1,16 +1,16 @@
-//unary operator.
-function troubleshooting () {
+// //unary operator.
+//  function troubleshooting () {
   
-  const a = "1";
-  const b = "1";
+//   const a = "1";
+//   const b = "1";
 
-  let result = +a + +b;
+//   let result = +a + +b;
 
-  //console.log(result);
-  console.log(result);
- }
+//   //console.log(result);
+//   console.log(result);
+//  }
 
- troubleshooting();
+ //troubleshooting();
 
 //  const div = document.createElement('div'); 
 //  Editing attributes
@@ -127,54 +127,54 @@ return letter;
 console.log(lastLetter(myWord));*/
 
 
-let answer = parseInt(prompt("Please enter the number you would like to fizzbuzz up to: "))
+//  let answer = parseInt(prompt("Please enter the number you would like to fizzbuzz up to: "))
 
-for (let i = 1; i<= answer; i++) {
-  if(i % 3 === 0) {
-    console.log("Fizz")
-  }  else {
-    console.log(i);
-  }
-}
+// for (let i = 1; i<= answer; i++) {
+//   if(i % 3 === 0) {
+//     console.log("Fizz")
+//   }  else {
+//     console.log(i);
+//   }
+// }
 
-let answer = parseInt(prompt("Please enter the number you would like to fizzbuzz up to:"));
+// let answer = parseInt(prompt("Please enter the number you would like to fizzbuzz up to:"));
 
-for (let i = 1; i <= answer; i++) {
-  if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz")
-  } else {
-    console.log(i);
-  }
-}
+// for (let i = 1; i <= answer; i++) {
+//   if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz")
+//   } else {
+//     console.log(i);
+//   }
+// }
 
 
-let answer = parseInt(prompt("Please enter the number you would love to FizBuzzz up to:"))
+// let answer = parseInt(prompt("Please enter the number you would love to FizBuzzz up to:"))
 
-for(let i = 1; i <= answer; i++)
-if(i % 3 === 0) {
-  console.log("Fizz");
-}else if (i % 5 === 0) {
-  console.log("Buzzz");
-}else {
-  console.log(i);
-}
+// for(let i = 1; i <= answer; i++)
+// if(i % 3 === 0) {
+//   console.log("Fizz");
+// }else if (i % 5 === 0) {
+//   console.log("Buzzz");
+// }else {
+//   console.log(i);
+// }
 
-//const body = document.body
-//body.append("Hello World", "Bye")
-// You can only append one thing at a time when using appendChild unlike when you are using append only.
-//How to create element
-//const div = document.createElement('div')
-//how to add text in our div element, we can also use textContent.
-//div.innerHTML  = "<strong>Hello World</strong>"
-//const strong = document.createElement('strong')
-//strong.innerText = 'Hello World 2'
-//div.append(strong) 
-//body.append(div)
-//const header = document.querySelector('header')
-//console.log(header.textContent)
-//h2.remove(h2)
+// //const body = document.body
+// //body.append("Hello World", "Bye")
+// // You can only append one thing at a time when using appendChild unlike when you are using append only.
+// //How to create element
+// //const div = document.createElement('div')
+// //how to add text in our div element, we can also use textContent.
+// //div.innerHTML  = "<strong>Hello World</strong>"
+// //const strong = document.createElement('strong')
+// //strong.innerText = 'Hello World 2'
+// //div.append(strong) 
+// //body.append(div)
+// //const header = document.querySelector('header')
+// //console.log(header.textContent)
+// //h2.remove(h2)
 //main.append(h2)
 //div.removeChild(h2)
 
@@ -262,5 +262,96 @@ if(i % 3 === 0) {
   //   === strict equality(triple equals);
   //   ==loose equality(double equals);
 
+//  dayRate(89);
+
+// let dayRate = 89 * Math.floor(7);
+// console.log(dayRate);
+
+//  function add(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(add(2, 3));
+
+// //EXPORTING FUNCTIONS TO OTHER FILES
+// You need to expose a function in other files inorder to make it constant or a variable using export keyword.
+// Another file may then import these using the import keyword, this is also known as module system.
 
 
+// export const EXPECTED_MINUTES_IN_OVEN = 40;
+//  export gifunction ovenMinutes() {
+
+// }
+
+// @ts-check
+//
+// ☝🏽 The line above enables type checking for this file. Various IDEs interpret
+// the @ts-check directive. It will give you helpful autocompletion on the web
+// and supported IDEs when implementing this exercise. You don't need to
+// understand types, JSDoc, or TypeScript in order to complete this JavaScript
+// exercise, and can completely ignore this comment block and directive.
+
+// 👋🏽 Hi there!
+//
+// On the JavaScript track we provide you with stubs. These stubs provide a
+// starting point to solving the exercise.
+//
+// In general, each variable/constant and each declared function will have a
+// JSDoc comment block above it, explaining what the variable/constant holds or
+// the function is supposed to accomplish.
+//
+// 💡 Often, the JSDoc comment blocks have annotations, such as @param and
+// @returns which are usually highlighted with a different color if the IDE
+// you're in recognizes them. It's these annotations that are used when
+// referring to the constant, variable, or function from somewhere else that
+// IDEs display.
+//
+// You don't need to write these yourself; it is not expected in idiomatic
+// JavaScript, but some companies and style-guides do enforce them.
+//
+// 💡 You're allowed to completely clear a stub before you get started. Often
+// we recommend using the stub, because they are already set-up correctly to
+// work with the tests, which you can find in ./lasagna.spec.js
+//
+// Good luck preparing some lasagna!
+
+/**
+ * The number of minutes it takes to prepare a single layer.
+ */
+ export const EXPECTED_MINUTES_IN_OVEN = 40;
+ const PREPARATION_MINUTES_PER_LAYER = 2;
+ 
+ /**
+  * Determines the number of minutes the lasagna still needs to remain in the
+  * oven to be properly prepared.
+  *
+  * @param {number} actualMinutesInOven
+  * @returns {number} the number of minutes remaining
+  */
+ export function remainingMinutesInOven(actualMinutesInOven) {
+ return (EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven)
+ }
+ 
+ /**
+  * Given a number of layers, determines the total preparation time.
+  *
+  * @param {number} numberOfLayers
+  * @returns {number} the total preparation time
+  */
+ export function preparationTimeInMinutes(numberOfLayers){
+   return (numberOfLayers * 2)
+ }
+ 
+ /**
+  * Calculates the total working time. That is, the time to prepare all the layers
+  * of lasagna, and the time already spent in the oven.
+  *
+  * @param {number} numberOfLayers
+  * @param {number} actualMinutesInOven
+  * @returns {number} the total working time
+  */
+   export const totalWorkingTime = numberOfLayers + actualMinutesInOven;
+ export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
+   return totalWorkingTime
+ }
+ 
