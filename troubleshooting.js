@@ -516,3 +516,42 @@ const year = 2020;
 
 year > 2000 ? 'in the past years' : 'a long time ago';
 // => 'in the past years'
+
+let counter = 0;
+
+// This function closure increments the counter's state in the outer lexical context.
+// This way the counter can be shared between many calling contexts.
+export function increment() {
+  counter += 1;
+  return counter;
+}
+
+let counter = 0;
+
+export function increment() {
+   counter++
+  return counter
+}
+
+About Callbacks
+Callback functions
+Callback functions are functions passed as arguments. This programming pattern creates a sequence of function calls in both synchronous and asynchronous programming. Writing a callback function is no different from writing a function; however, the callback function must match the signature defined by the calling function.
+
+const sideLength = 5;
+
+// Caller function takes a callback function
+function applySideLength(callback) {
+  return callback(sideLength);
+}
+
+// Callback must expect the possible argument from the calling function
+function areaOfSquare(side) {
+  return side * side;
+}
+
+applySideLength(areaOfSquare); // => 25
+You may also write callbacks as a function expression:
+
+applySideLength(function squarePerimeterLength(side) {
+  return side * 4;
+});
