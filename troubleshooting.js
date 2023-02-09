@@ -482,3 +482,11 @@ const num = 0;
 if (num) {
   // this block is NOT executed because 0 is falsy
 }
+
+function checkNumber(num) {
+  if (num === 0) {
+    return 'You passed 0, please provide another number.';
+  }
+
+  return 'Thanks for passing such a nice number.';
+}
