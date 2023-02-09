@@ -452,3 +452,33 @@
 // Unary plus and unary negation operators: +, -
 // Relational operators (for non-string operands): >, >=, <, <=
 // Bitwise operators: |, &, ^, ~
+
+
+
+
+Boolean Context
+When a non-boolean value is used in a boolean context, JavaScript will apply the same rules as the Boolean function to implicitly convert the value.
+
+Coercion to boolean commonly occurs for
+
+the condition of an if statement
+the first operand of the ternary operator ?
+the operand of the logical NOT operator !
+the operands of the logical AND && and OR || operators (the result of the expression is one of the operands, not necessarily a boolean)
+const num = 0;
+if (num) {
+  // this block is NOT executed because 0 is falsy
+}
+Boolean Context
+When a non-boolean value is used in a boolean context, JavaScript will apply the same rules as the Boolean function to implicitly convert the value.
+
+Coercion to boolean commonly occurs for
+
+the condition of an if statement
+the first operand of the ternary operator ?
+the operand of the logical NOT operator !
+the operands of the logical AND && and OR || operators (the result of the expression is one of the operands, not necessarily a boolean)
+const num = 0;
+if (num) {
+  // this block is NOT executed because 0 is falsy
+}
